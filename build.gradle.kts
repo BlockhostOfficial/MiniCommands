@@ -1,6 +1,6 @@
 plugins {
     java
-    id("xyz.jpenilla.run-velocity") version "2.1.0"
+    id("xyz.jpenilla.run-velocity") version "2.2.2"
 }
 
 group = "net.blockhost"
