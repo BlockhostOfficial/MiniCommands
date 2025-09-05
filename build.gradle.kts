@@ -25,8 +25,8 @@ dependencies {
     compileOnly("net.kyori:adventure-text-minimessage:4.24.0")
     compileOnly("io.github.miniplaceholders:miniplaceholders-api:2.3.0")
 
-    compileOnly("org.projectlombok:lombok:1.18.38")
-    annotationProcessor("org.projectlombok:lombok:1.18.38")
+    compileOnly("org.projectlombok:lombok:1.18.40")
+    annotationProcessor("org.projectlombok:lombok:1.18.40")
 }
 
 tasks {
