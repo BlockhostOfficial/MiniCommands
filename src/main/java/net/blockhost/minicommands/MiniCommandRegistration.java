@@ -89,10 +89,10 @@ public class MiniCommandRegistration implements RawCommand {
 
             TagResolver resolver = Placeholder.parsed("name", username);
             if (plugin.getServer().getPluginManager().isLoaded("miniplaceholders")) {
-                resolver = TagResolver.resolver(MiniPlaceholdersModule.getTagResolver(source), resolver);
+                resolver = TagResolver.resolver(MiniPlaceholdersModule.getTagResolver(), resolver);
             }
 
-            var component = miniMessage.deserialize(message, resolver);
+            var component = miniMessage.deserialize(message, source, resolver);
 
             source.sendMessage(component);
         }
