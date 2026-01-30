@@ -1,6 +1,11 @@
 plugins {
+    base
     java
     id("xyz.jpenilla.run-velocity") version "3.0.2"
+}
+
+tasks.named<UpdateDaemonJvm>("updateDaemonJvm") {
+    languageVersion = JavaLanguageVersion.of(25)
 }
 
 group = "net.blockhost"
