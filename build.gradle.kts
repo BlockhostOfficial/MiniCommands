@@ -3,7 +3,7 @@ plugins {
     java
     id("xyz.jpenilla.run-velocity") version "3.0.2"
     id("com.diffplug.spotless") version "8.2.1"
-    id("net.ltgt.errorprone") version "5.0.0"
+    id("net.ltgt.errorprone") version "5.1.0"
     id("com.github.spotbugs") version "6.4.8"
     id("org.openrewrite.rewrite") version "7.27.0"
 }
