@@ -56,8 +56,8 @@ dependencies {
     rewrite("org.openrewrite.recipe:rewrite-migrate-java:3.31.0")
     rewrite("org.openrewrite.recipe:rewrite-rewrite:0.22.0")
 
-    compileOnly("com.velocitypowered:velocity-api:3.4.0")
-    annotationProcessor("com.velocitypowered:velocity-api:3.4.0")
+    compileOnly("com.velocitypowered:velocity-api:4.0.0")
+    annotationProcessor("com.velocitypowered:velocity-api:4.0.0")
 
     compileOnly("net.kyori:adventure-text-minimessage:4.26.1")
     compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.1.0")
