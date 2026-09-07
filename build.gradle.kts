@@ -1,11 +1,11 @@
 plugins {
     base
     java
-    id("xyz.jpenilla.run-velocity") version "3.0.2"
-    id("com.diffplug.spotless") version "8.4.0"
-    id("net.ltgt.errorprone") version "5.1.0"
-    id("com.github.spotbugs") version "6.4.8"
-    id("org.openrewrite.rewrite") version "7.29.0"
+    id("xyz.jpenilla.run-velocity") version "3.1.0"
+    id("com.diffplug.spotless") version "8.10.2"
+    id("net.ltgt.errorprone") version "5.1.1"
+    id("com.github.spotbugs") version "6.5.11"
+    id("org.openrewrite.rewrite") version "7.41.0"
 }
 
 tasks.named<UpdateDaemonJvm>("updateDaemonJvm") {
@@ -49,21 +49,21 @@ java {
 }
 
 dependencies {
-    errorprone("com.google.errorprone:error_prone_core:2.48.0")
-    spotbugs("com.github.spotbugs:spotbugs:4.9.8")
+    errorprone("com.google.errorprone:error_prone_core:2.50.0")
+    spotbugs("com.github.spotbugs:spotbugs:4.10.4")
 
-    rewrite("org.openrewrite.recipe:rewrite-static-analysis:2.31.0")
-    rewrite("org.openrewrite.recipe:rewrite-migrate-java:3.31.0")
-    rewrite("org.openrewrite.recipe:rewrite-rewrite:0.22.0")
+    rewrite("org.openrewrite.recipe:rewrite-static-analysis:2.41.1")
+    rewrite("org.openrewrite.recipe:rewrite-migrate-java:3.42.1")
+    rewrite("org.openrewrite.recipe:rewrite-rewrite:0.30.0")
 
-    compileOnly("com.velocitypowered:velocity-api:4.0.0")
-    annotationProcessor("com.velocitypowered:velocity-api:4.0.0")
+    compileOnly("com.velocitypowered:velocity-api:4.1.1")
+    annotationProcessor("com.velocitypowered:velocity-api:4.1.1")
 
     compileOnly("net.kyori:adventure-text-minimessage:4.26.1")
-    compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.1.0")
+    compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.2.0")
 
-    compileOnly("org.projectlombok:lombok:1.18.44")
-    annotationProcessor("org.projectlombok:lombok:1.18.44")
+    compileOnly("org.projectlombok:lombok:1.18.48")
+    annotationProcessor("org.projectlombok:lombok:1.18.48")
 }
 
 tasks {
