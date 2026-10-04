@@ -5,7 +5,7 @@ plugins {
     id("com.diffplug.spotless") version "8.10.3"
     id("net.ltgt.errorprone") version "5.1.1"
     id("com.github.spotbugs") version "6.5.12"
-    id("org.openrewrite.rewrite") version "7.41.0"
+    id("org.openrewrite.rewrite") version "7.29.0"
 }
 
 tasks.named<UpdateDaemonJvm>("updateDaemonJvm") {
