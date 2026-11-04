@@ -12,7 +12,7 @@ Keep each change focused. Avoid unrelated formatting and dependency updates.
 
 ## Prepare a checkout
 
-Use JDK 25 for the Gradle daemon. Java compilation selects the Java 21 toolchain declared in the build.
+Use JDK 25 for the Gradle daemon and Java compilation.
 
 Run the commands below from the repository root unless a command names another directory.
 On Windows, use `gradlew.bat` in place of `./gradlew` for Gradle commands.
