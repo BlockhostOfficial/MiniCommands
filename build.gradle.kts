@@ -56,11 +56,11 @@ dependencies {
     rewrite("org.openrewrite.recipe:rewrite-migrate-java:3.42.1")
     rewrite("org.openrewrite.recipe:rewrite-rewrite:0.30.0")
 
-    compileOnly("com.velocitypowered:velocity-api:4.2.0")
-    annotationProcessor("com.velocitypowered:velocity-api:4.2.0")
+    compileOnly("com.velocitypowered:velocity-api:3.5.1")
+    annotationProcessor("com.velocitypowered:velocity-api:3.5.1")
 
     compileOnly("net.kyori:adventure-text-minimessage:4.26.1")
-    compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.2.0")
+    compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.1.0")
 
     compileOnly("org.projectlombok:lombok:1.18.48")
     annotationProcessor("org.projectlombok:lombok:1.18.48")
