@@ -2,10 +2,10 @@ plugins {
     base
     java
     id("xyz.jpenilla.run-velocity") version "3.1.0"
-    id("com.diffplug.spotless") version "8.10.3"
-    id("net.ltgt.errorprone") version "5.1.1"
-    id("com.github.spotbugs") version "6.5.12"
-    id("org.openrewrite.rewrite") version "7.29.0"
+    id("com.diffplug.spotless") version "8.11.0"
+    id("net.ltgt.errorprone") version "5.2.0"
+    id("com.github.spotbugs") version "6.5.13"
+    id("org.openrewrite.rewrite") version "7.39.0"
 }
 
 tasks.named<UpdateDaemonJvm>("updateDaemonJvm") {
@@ -49,8 +49,8 @@ java {
 }
 
 dependencies {
-    errorprone("com.google.errorprone:error_prone_core:2.50.0")
-    spotbugs("com.github.spotbugs:spotbugs:4.10.4")
+    errorprone("com.google.errorprone:error_prone_core:2.52.0")
+    spotbugs("com.github.spotbugs:spotbugs:4.10.5")
 
     rewrite("org.openrewrite.recipe:rewrite-static-analysis:2.41.1")
     rewrite("org.openrewrite.recipe:rewrite-migrate-java:3.42.1")
