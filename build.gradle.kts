@@ -5,7 +5,7 @@ plugins {
     id("com.diffplug.spotless") version "8.11.0"
     id("net.ltgt.errorprone") version "5.2.0"
     id("com.github.spotbugs") version "6.5.13"
-    id("org.openrewrite.rewrite") version "7.41.0"
+    id("org.openrewrite.rewrite") version "7.39.0"
 }
 
 tasks.named<UpdateDaemonJvm>("updateDaemonJvm") {
@@ -59,7 +59,7 @@ dependencies {
     compileOnly("com.velocitypowered:velocity-api:4.3.1")
     annotationProcessor("com.velocitypowered:velocity-api:4.3.1")
 
-    compileOnly("net.kyori:adventure-text-minimessage:4.26.1")
+    compileOnly("net.kyori:adventure-text-minimessage:5.2.0")
     compileOnly("io.github.miniplaceholders:miniplaceholders-api:3.2.0")
 
     compileOnly("org.projectlombok:lombok:1.18.48")
